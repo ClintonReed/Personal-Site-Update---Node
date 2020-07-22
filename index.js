@@ -15,7 +15,7 @@ app.get("/", function (req, res) {
 
 // Serving up hello.pug
 app.get("/hello", function (req, res) {
-  res.render("hello", { title: "Hello", message: "Hello there!" });
+  res.render("hello", { title: "Hello", message: "Hello there!", });
 });
 
 // Server port location
