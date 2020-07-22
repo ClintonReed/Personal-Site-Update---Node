@@ -1,7 +1,11 @@
 body {
-    background: linear-gradient(rgb(109, 185, 199), rgb(21, 21, 124));
+  background: linear-gradient(rgb(109, 185, 199), rgb(21, 21, 124));
 }
 
 h1 {
-    text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 90px;
+  font-weight: 100;
+  font-style: inherit;
+  text-align: center;
 }
