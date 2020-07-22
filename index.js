@@ -8,9 +8,13 @@ app.set("view engine", "pug");
 // Using Express
 app.use(express.static("public"));
 
-// Serving up index.pug
+// Serving index.pug
 app.get('/', function (req, res) {
-  res.render('index', { title: 'SeaReed Productions', message: 'SeaReed Productions' })
+  res.render('index', { title: 'SeaReed Productions', message: 'SeaReed Productions'})
+})
+
+app.get('/home', function (req, res) {
+  res.render('home', { title: 'SeaReed Productions Home', message: 'SeaReed Productions'})
 })
 
 // Server port location
