@@ -10,11 +10,11 @@ app.use(express.static("public"));
 
 // Serving index.pug
 app.get('/', function (req, res) {
-  res.render('index', { title: 'SeaReed Productions', message: 'SeaReed Productions'})
+  res.render('index', { title: 'Creed Productions', message: 'Creed Productions'})
 })
 
 app.get('/home', function (req, res) {
-  res.render('home', { title: 'SeaReed Productions Home', message: 'SeaReed Productions'})
+  res.render('home', { title: 'Creed Productions Home', message: 'Creed Productions'})
 })
 
 // Server port location
