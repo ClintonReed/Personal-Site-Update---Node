@@ -42,22 +42,3 @@ h1 {
   text-transform: uppercase;
 }
 
-h1 p {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 15vh;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  letter-spacing: 0.4em;
-  font-size: 20pt;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 500vh;
-  width: 40%;
-}

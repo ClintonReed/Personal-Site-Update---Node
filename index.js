@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/home', function (req, res) {
-  res.render('home', { title: 'CReedProd Home', message: 'CReed Productions'})
+  res.render('home', { title: 'CReedProd Home', message: 'Welcome'})
 })
 
 // Server port location
