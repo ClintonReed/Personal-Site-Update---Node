@@ -17,6 +17,10 @@ app.get('/home', function (req, res) {
   res.render('home', { title: 'CReedProd Home', message: 'Welcome'})
 })
 
+app.get('/photography', function (req, res) {
+  res.render('photography', { title: 'CreedProd Photography', message: 'Photography'})
+})
+
 // Server port location
 app.listen(3000, function () {
   console.log("Listening on port 3000!");
