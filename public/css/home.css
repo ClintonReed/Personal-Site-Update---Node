@@ -83,11 +83,12 @@ body {
 h1 {
   width: 100%;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(26, 26, 26);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   font-size: 120pt;
-  opacity: 0.6;
+  font-weight: normal;
+  opacity: 0.8;
   text-transform: uppercase;
   transform: translateY(-600px);
   animation: 1.8s slideIn ease-in-out forwards 2s;
