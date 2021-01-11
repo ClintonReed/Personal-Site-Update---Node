@@ -11,9 +11,9 @@ body {
     #52bed1,
     #3b4ad3,
     #181369,
-    #8d49cc,
-    #9e1681,
-    #aa1897
+    #069224,
+    #b4b62c,
+    #a71a1a
   );
   background-size: 600% 100%;
   animation: gradient 25s linear infinite;
@@ -27,18 +27,134 @@ body {
     background-position: 100%;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-h1 {
+
+.container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  background-color: var(--complimentary-color);
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ position: relative;
+}
+
+.overlay {
   position: absolute;
   width: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+  transform: scale(.5);
+  animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+}
+
+@keyframes skewBg {
+0% {
+  transform: scale(.5);
+}
+100% {
+  transform: scale(1);
+}
+}
+
+@keyframes underline {
+100% {
+  width: 100%;
+}
+}
+
+@keyframes slideIn {
+100% {
+  transform: translateY(0px);
+  opacity: 1;
+}
+}
+
+h1 {
+  width: 100%;
   text-align: center;
-  top: 5vh;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   letter-spacing: 0.4em;
-  font-size: 60pt;
-  font-weight: normal;
-  opacity: 0.4;
+  font-size: 120pt;
+  opacity: 0.6;
   text-transform: uppercase;
+  transform: translateY(-600px);
+  animation: 1.8s slideIn ease-in-out forwards 2s;
+  position: relative;
 }
+
+ul {
+  list-style: none;
+  text-align: center;
+  top: 5vh;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  letter-spacing: 0.4em;
+  font-size: 30pt;
+  font-weight: normal;
+  text-transform: uppercase;
+  transform: translateX(-1500px);
+  animation: 1.5s slideIn ease-in-out forwards 1.5s;
+}
+
+a {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+}
+
+a:hover {
+  color: #aaaaaa;
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover:after {
+  border-color: #000000;
+  right: 0;
+}
+
+a:after {
+  border-radius: 1em;
+  border-top: 0.1em solid #000000;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+
+a:hover:after {
+  animation: anchor-underline 2s cubic-bezier(0, 0.5, 0, 1) infinite;
+  border-color: #000000;
+}
+
+@keyframes anchor-underline {
+  0%,
+  10% {
+    left: 0;
+    right: 100%;
+  }
+  40%,
+  60% {
+    left: 0;
+    right: 0;
+  }
+  90%,
+  100% {
+    left: 100%;
+    right: 0;
+  }
 
