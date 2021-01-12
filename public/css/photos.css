@@ -1,62 +1,52 @@
-.wrapper {
-  width: 100%;
+body,
+html {
   height: 100%;
-  position: absolute;
-  background: linear-gradient(55deg, black, white);
-  background-size: 600% 100%;
-  animation: gradient 25s linear infinite;
-  animation-direction: alternate;
-  z-index: -1;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-* {
   margin: 0;
-  padding: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+* {
   box-sizing: border-box;
 }
 
-h1 {
-  width: 100%;
-  text-align: center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 45pt;
-  font-weight: normal;
-  opacity: 0.8;
-  text-transform: uppercase;
-  position: relative;
+.bg-image {
+  /* Full height */
+  height: 75%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.imgwrap {
-  margin: auto;
-  width: 55%;
-  padding: 10px;
-}
-
+/* Images used */
 .img1 {
-  width: 100%;
-  height: auto;
-  padding-bottom: 5%;
-}
-.img2 {
-  width: 100%;
-  height: auto;
-  padding-bottom: 5%;
-}
-.img3 {
-  width: 100%;
-  height: auto;
-  padding-bottom: 5%;
+  background-image: url("https://creedprod2.blob.core.windows.net/pictures/level.jpg");
 }
 .img4 {
-  width: 100%;
-  height: auto;
-  padding-bottom: 5%;
+  background-image: url("https://creedprod2.blob.core.windows.net/pictures/Dark Percussion.jpg");
+}
+.img2 {
+  background-image: url("https://creedprod2.blob.core.windows.net/pictures/Keys.jpg");
+}
+.img3 {
+  background-image: url("https://creedprod2.blob.core.windows.net/pictures/Parallel.jpg");
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
 }
