@@ -8,13 +8,13 @@ app.set("view engine", "pug");
 // Using Express
 app.use(express.static("public"));
 
-// Serving index.pug
+// Pages
 app.get('/', function (req, res) {
   res.render('index', { title: 'CReed Productions', message: 'CReed Productions'})
 })
 
 app.get('/home', function (req, res) {
-  res.render('home', { title: 'CReedProd Home', message: 'Welcome'})
+  res.render('home', { title: 'CReedProd Home', message: 'welcome'})
 })
 
 app.get('/photography', function (req, res) {

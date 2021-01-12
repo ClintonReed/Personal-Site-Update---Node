@@ -1,0 +1,39 @@
+h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 45pt;
+  font-weight: normal;
+  opacity: 0.8;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.imgwrap {
+    margin: auto;
+    width: 55%;
+    padding: 10px;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
+.img2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
+.img3 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
+.img4 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
